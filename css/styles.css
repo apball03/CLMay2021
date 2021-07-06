@@ -9,7 +9,6 @@ header{
 }
 main{
     padding: 4rem;
-    display: flex;
 }
 body {
     margin: -8px;
@@ -48,6 +47,10 @@ a {
 /* Tablet */
 @media (min-width: 769px) {
 
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 	.main-header,
 	.main-nav {
 		display: flex;
@@ -56,6 +59,10 @@ a {
 		flex-direction: column;
 		align-items: center;
 	}
+    .about{
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
 
