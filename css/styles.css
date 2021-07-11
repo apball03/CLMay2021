@@ -1,24 +1,39 @@
 * {
     box-sizing: border-box;
 }
+
+html{
+    font-size: 1.25em;
+}
 header{
-    background: url(../img/Louisville-Kentucky-Skyline.jpg);
-    background-size: cover;
-    text-align: center;
     padding: 1em 0;
+    background: url(../img/Louisville-Kentucky-Skyline.jpg) center / cover no-repeat #3962bc;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+
 }
 main{
     padding: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 body {
     margin: -8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+
 }
+
 ul {
     margin: 0;
+    margin-left: 1em;
     padding: 0;
-    list-style: none;
-  }
 
+  }
+.exp ul{
+    list-style: circle;
+}
 h1 {
     margin-left: 1em;
 }
@@ -29,13 +44,20 @@ a {
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
+.main-nav{
+    list-style: none;
+}
 .main-nav a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
     font-size: .95em;
 }
+.column:first-child {
+    margin-bottom: 4rem;
+  }
+
+
 
 /* ---- Layout Containers ---- */
 
@@ -46,25 +68,19 @@ a {
 
 /* Tablet */
 @media (min-width: 769px) {
-
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-	.main-header,
-	.main-nav {
+    .main-header,
+	.main-nav,
+	.about {
 		display: flex;
 	}
 	.main-header {
 		flex-direction: column;
 		align-items: center;
 	}
-    .about{
-        display: flex;
-        justify-content: space-around;
-    }
 
-}
+    .column {
+        flex: 1;
+    }
 
 /* Desktop */
 @media (min-width: 1025px) {
