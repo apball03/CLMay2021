@@ -39,12 +39,48 @@ h1 {
 a {
 	text-decoration: none;
 }
+#ham-container{
+    display: block;
+    margin: auto;
+    margin-right: 2em;
+}
+
+.ham-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
 .main-nav{
     list-style: none;
+    display: none;
 }
 .main-nav li {
 	text-align: center;
@@ -56,6 +92,13 @@ a {
     border-radius: 16px;
     font-weight: bold;
     font-size: .8em;
+}
+.exp li{
+    margin-bottom: 1em;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -77,22 +120,23 @@ a {
 		flex-direction: column;
 		align-items: center;
 	}
-
     .column {
         margin: 1em;
         flex: 1;
     }
-
     section{
         border-bottom: solid 3px black;
-
     }
+    #ham-container{
+        display: none;
+    }
+    
 }
 /* Desktop */
 @media (min-width: 1025px) {
 
 	.main-header {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 }
