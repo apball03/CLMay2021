@@ -1,4 +1,4 @@
-#  Introduction to Front End 
+#  Introduction to Front End -- Personal Website
 
 This project is a personal portfolio website created as part of the Code Louisville Front-End Development course of Spring 2021. It includes a menu of contact information, and sections for my qualifications, education, and experience. 
 
