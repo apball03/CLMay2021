@@ -4,7 +4,7 @@ This project is a personal portfolio website created as part of the Code Louisvi
 
 The goal of this project is to provide a creative and practical way to display my skills and knowledge as an alternative to a standard resume. A mobile-first approach was taken to the design and the site includes two media queries for tablet- and desktop-sized screens that alter the content the user is viewing. The features I would like to pursue next are a sticky footer with links to my social media and a photo carousel of various projects I have worked on that, when clicked, will take a user to my github profile.
 
-## The features included in the final project that satisfy the requirements of the final project are as follows:
+## The features included in this project that satisfy the requirements of the final project are as follows:
 
 1. A navigation menu that expands and collapses responsively with the webpage.
 
