@@ -123,7 +123,7 @@ h1{
 ==================================== */
 
 /* Tablet */
-@media (min-width: 769px) {
+@media (min-width: 733px) {
     .main-header,
 	.main-nav,
 	.about {
